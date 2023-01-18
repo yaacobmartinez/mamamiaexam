@@ -50,13 +50,13 @@ export default {
       '@nuxtjs/firebase',
       {
         config: {
-          apiKey: "AIzaSyDe6gFnqSrTf2tuUkqm4vDmdDGqj6sffUA",
-          authDomain: "mamamia-d3690.firebaseapp.com",
-          projectId: "mamamia-d3690",
-          storageBucket: "mamamia-d3690.appspot.com",
-          messagingSenderId: "365856333363",
-          appId: "1:365856333363:web:532bd0f12c8df71b8f4d46",
-          measurementId: "G-126SDMD3CF"
+          apiKey: process.env.FIREBASE_API_KEY,
+          authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+          projectId: process.env.FIREBASE_PROJECT_ID,
+          storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+          messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+          appId: process.env.FIREBASE_APP_ID,
+          measurementId: process.env.FIREBASE_MEASUREMENT_ID,
         },
         services: {
           firestore: true,
